@@ -1,5 +1,10 @@
 import { expect } from 'chai';
-import { LongestWord, FirstFactorial, FirstReverse } from '../src';
+import {
+  LongestWord,
+  FirstFactorial,
+  FirstReverse,
+  LetterChange
+} from '../src';
 
 describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
   // 5/11/2019
@@ -50,6 +55,26 @@ describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
       // verify
       expect(reverse1).to.equal('etybredoc');
       expect(reverse2).to.equal('edoC evoL I');
+    });
+  });
+
+  // 5/13/2019
+  describe('Letter Change', () => {
+    it('changes each letter to the next in the alphabet and capitalizes vowels in the result', () => {
+      // setup
+      const str1 = 'hello*3';
+      const str2 = 'fun times!';
+      const str3 = 'a confusing /:sentence:/[ this is not!!!!!!!~';
+
+      // execution
+      const change1 = LetterChange(str1);
+      const change2 = LetterChange(str2);
+      const change3 = LetterChange(str3);
+
+      // verify
+      expect(change1).to.equal('Ifmmp*3');
+      expect(change2).to.equal('gvO Ujnft!');
+      expect(change3).to.equal('b dpOgvtjOh /:tfOUfOdf:/[ UIjt jt OpU!!!!!!!~');
     });
   });
 });
