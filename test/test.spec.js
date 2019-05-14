@@ -4,7 +4,8 @@ import {
   FirstFactorial,
   FirstReverse,
   LetterChange,
-  SimpleAdding
+  SimpleAdding,
+  LetterCapitalize
 } from '../src';
 
 describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
@@ -93,6 +94,23 @@ describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
       // verify
       expect(output1).to.equal(78);
       expect(output2).to.equal(9870);
+    });
+  });
+
+  // 5/14/19
+  describe('Letter Capitalize', () => {
+    it('capitalizes the first letter of each word in a string', () => {
+      // setup
+      const input1 = 'hello world';
+      const input2 = 'i ran there';
+
+      // execution
+      const output1 = LetterCapitalize(input1);
+      const output2 = LetterCapitalize(input2);
+
+      // verify
+      expect(output1).to.equal('Hello World');
+      expect(output2).to.equal('I Ran There');
     });
   });
 });
