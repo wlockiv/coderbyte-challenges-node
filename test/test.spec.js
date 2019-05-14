@@ -3,7 +3,8 @@ import {
   LongestWord,
   FirstFactorial,
   FirstReverse,
-  LetterChange
+  LetterChange,
+  SimpleAdding
 } from '../src';
 
 describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
@@ -75,6 +76,23 @@ describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
       expect(change1).to.equal('Ifmmp*3');
       expect(change2).to.equal('gvO Ujnft!');
       expect(change3).to.equal('b dpOgvtjOh /:tfOUfOdf:/[ UIjt jt OpU!!!!!!!~');
+    });
+  });
+
+  // 5/14/19
+  describe('Simple Adding', () => {
+    it('adds all of the numbers from 1 to input', () => {
+      // setup
+      const input1 = 12;
+      const input2 = 140;
+
+      // execution
+      const output1 = SimpleAdding(input1);
+      const output2 = SimpleAdding(input2);
+
+      // verify
+      expect(output1).to.equal(78);
+      expect(output2).to.equal(9870);
     });
   });
 });
