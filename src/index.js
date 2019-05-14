@@ -1,15 +1,17 @@
 import FirstFactorial from './FirstFactorial';
-import LongestWord from './LongestWord';
 import FirstReverse from './FirstReverse';
-import LetterChange from './LetterChange';
-import SimpleAdding from './SimpleAdding';
 import LetterCapitalize from './LetterCapitalize';
+import LetterChange from './LetterChange';
+import LongestWord from './LongestWord';
+import SimpleAdding from './SimpleAdding';
+import SimpleSymbols from './SimpleSymbols';
 
 export {
   FirstFactorial,
+  FirstReverse,
+  LetterCapitalize,
   LetterChange,
   LongestWord,
-  FirstReverse,
   SimpleAdding,
-  LetterCapitalize
+  SimpleSymbols
 };

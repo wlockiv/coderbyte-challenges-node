@@ -1,11 +1,12 @@
 import { expect } from 'chai';
 import {
-  LongestWord,
   FirstFactorial,
   FirstReverse,
+  LetterCapitalize,
   LetterChange,
+  LongestWord,
   SimpleAdding,
-  LetterCapitalize
+  SimpleSymbols
 } from '../src';
 
 describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
@@ -111,6 +112,23 @@ describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
       // verify
       expect(output1).to.equal('Hello World');
       expect(output2).to.equal('I Ran There');
+    });
+  });
+
+  // 5/14/19
+  describe('Simple Symbol', () => {
+    it('evaluates string and returns \'true\' if letters are surrounded by \'+\'', () => {
+      // setup
+      const input1 = '+d+=3=+s+';
+      const input2 = 'f++d+';
+
+      // execution
+      const output1 = SimpleSymbols(input1);
+      const output2 = SimpleSymbols(input2);
+
+      // verify
+      expect(output1).to.equal('true');
+      expect(output2).to.equal('false');
     });
   });
 });
