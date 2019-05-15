@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import {
+  AlphabetSoup,
   CheckNums,
   FirstFactorial,
   FirstReverse,
@@ -168,6 +169,23 @@ describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
       // verify
       expect(output1).to.equal('2:6');
       expect(output2).to.equal('0:45');
+    });
+  });
+
+  // 5/15/19
+  describe('Alphabet Soup', () => {
+    it('sorts the characters in a string alphabetically', () => {
+      // setup
+      const input1 = 'hello';
+      const input2 = 'zyx';
+
+      // execution
+      const output2 = AlphabetSoup(input2);
+      const output1 = AlphabetSoup(input1);
+
+      // verify
+      expect(output1).to.equal('ehllo');
+      expect(output2).to.equal('xyz');
     });
   });
 });
