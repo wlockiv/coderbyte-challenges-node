@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import {
+  CheckNums,
   FirstFactorial,
   FirstReverse,
   LetterCapitalize,
@@ -129,6 +130,26 @@ describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
       // verify
       expect(output1).to.equal('true');
       expect(output2).to.equal('false');
+    });
+  });
+
+  // 5/15/19
+  describe('Check Nums', () => {
+    it('returns \'true\' if num2 > num1, \'false\' if num2 < num1, -1 if they are equal', () => {
+      // setup
+      const input1 = [24, 32];
+      const input2 = [32, 24];
+      const input3 = [32, 32];
+
+      // execution
+      const output1 = CheckNums(input1[0], input1[1]);
+      const output2 = CheckNums(input2[0], input2[1]);
+      const output3 = CheckNums(input3[0], input3[1]);
+
+      // verify
+      expect(output1).to.equal('true');
+      expect(output2).to.equal('false');
+      expect(output3).to.equal(-1);
     });
   });
 });
