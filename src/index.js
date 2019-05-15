@@ -6,3 +6,4 @@ export { default as LetterChange } from './LetterChange';
 export { default as LongestWord } from './LongestWord';
 export { default as SimpleAdding } from './SimpleAdding';
 export { default as SimpleSymbols } from './SimpleSymbols';
+export { default as TimeConvert } from './TimeConvert';

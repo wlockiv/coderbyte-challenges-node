@@ -7,7 +7,8 @@ import {
   LetterChange,
   LongestWord,
   SimpleAdding,
-  SimpleSymbols
+  SimpleSymbols,
+  TimeConvert
 } from '../src';
 
 describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
@@ -150,6 +151,23 @@ describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
       expect(output1).to.equal('true');
       expect(output2).to.equal('false');
       expect(output3).to.equal(-1);
+    });
+  });
+
+  // 5/15/19
+  describe('Time Convert', () => {
+    it('converts minutes into hours in minutes separated by a semicolon', () => {
+      // setup
+      const input1 = 126;
+      const input2 = 45;
+
+      // execution
+      const output2 = TimeConvert(input2);
+      const output1 = TimeConvert(input1);
+
+      // verify
+      expect(output1).to.equal('2:6');
+      expect(output2).to.equal('0:45');
     });
   });
 });
