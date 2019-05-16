@@ -1,4 +1,6 @@
+export { default as AlphabetSoup } from './AlphabetSoup';
 export { default as CheckNums } from './CheckNums';
+export { default as CorrectPath } from './CorrectPath';
 export { default as FirstFactorial } from './FirstFactorial';
 export { default as FirstReverse } from './FirstReverse';
 export { default as LetterCapitalize } from './LetterCapitalize';
@@ -7,4 +9,3 @@ export { default as LongestWord } from './LongestWord';
 export { default as SimpleAdding } from './SimpleAdding';
 export { default as SimpleSymbols } from './SimpleSymbols';
 export { default as TimeConvert } from './TimeConvert';
-export { default as AlphabetSoup } from './AlphabetSoup';

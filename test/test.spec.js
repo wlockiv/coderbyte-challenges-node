@@ -2,6 +2,7 @@ import { expect } from 'chai';
 import {
   AlphabetSoup,
   CheckNums,
+  CorrectPath,
   FirstFactorial,
   FirstReverse,
   LetterCapitalize,
@@ -186,6 +187,24 @@ describe('CoderByte Coding Challenges using NodeJS with ES6 Syntax', () => {
       // verify
       expect(output1).to.equal('ehllo');
       expect(output2).to.equal('xyz');
+    });
+  });
+
+  // 5/16/19
+  // Followed the provided solution closely
+  describe('Correct Path', () => {
+    it('finds a correct path from the partial path given', () => {
+      // setup
+      const input1 = '???rrurdr?';
+      const input2 = 'drdr??rrdddd';
+
+      // execution
+      const output1 = CorrectPath(input1);
+      const output2 = CorrectPath(input2);
+
+      // verify
+      expect(output1).to.equal('dddrrurdrd');
+      expect(output2).to.equal('drdruurrdddd');
     });
   });
 });
